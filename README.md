@@ -1,0 +1,1 @@
+Second attaempt at setting up an Astro Netlify-CMS blog
