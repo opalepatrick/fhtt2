@@ -1,14 +1,12 @@
 ---
 export interface Props {
 	title: string;
-	author: string;
 	publishDate: string;
 	heroImage: string;
 	alt: string;
-	sponsor: string;
 }
 
-const { title, author, publishDate, heroImage, alt, sponsor } = Astro.props;
+const { title, publishDate, heroImage, alt } = Astro.props;
 ---
 
 <div class="layout">
@@ -22,9 +20,6 @@ const { title, author, publishDate, heroImage, alt, sponsor } = Astro.props;
 			<main>
 				<slot />
 			</main>
-		</div>
-		<div>
-			<p>{sponsor}</p>
 		</div>
 	</article>
 </div>
@@ -85,5 +80,9 @@ const { title, author, publishDate, heroImage, alt, sponsor } = Astro.props;
 	.title {
 		font-size: 2.25rem;
 		font-weight: 700;
+	}
+
+	.sponsor {
+		margin-top: 2rem;
 	}
 </style>
